@@ -29,11 +29,14 @@ export const NavBar = () => {
         }}
       >
         Sign up and get exclusive offers.
-        <i onClick={() => setIsVisible(false)} class="fa-solid fa-xmark"></i>
+        <i onClick={() => setIsVisible(false)} className="fa-solid fa-xmark"></i>
       </div>
       <div className="nav">
         <div className="navbar">
-          <img src={logo} alt="logo" onClick={() => navigate("/")} />
+          <div className="logo-container" onClick={() => navigate("/")}>
+            <img src={logo} alt="logo" className="logo" />
+            <span className="brand-text">Mytalorzone By Sahiba</span>
+          </div>
           <div className="nav-options">
             <p>
               <NavLink style={activeStyle} to="/">
@@ -47,9 +50,9 @@ export const NavBar = () => {
             </p>
           </div>
           <div className="nav-navigate">
-            <div onClick={() => navigate("/products")}>
+            <div onClick={() => navigate("/products")} className="search-container">
               <i
-                class="fa-solid fa-magnifying-glass"
+                className="fa-solid fa-magnifying-glass"
                 style={{ color: "#98999a" }}
               ></i>
               <input
@@ -65,13 +68,13 @@ export const NavBar = () => {
             </div>
             <i
               onClick={() => navigate("/cart")}
-              class="fa-solid fa-cart-shopping"
+              className="fa-solid fa-cart-shopping"
             ></i>
             {cart.length > 0 && <p className="badge">{token && cart.length}</p>}
 
             <i
               onClick={() => navigate("/wishlist")}
-              class="fa-solid fa-heart"
+              className="fa-solid fa-heart"
             ></i>
             {wishlist.length > 0 && (
               <p className="badge">{token && wishlist.length}</p>
@@ -82,11 +85,11 @@ export const NavBar = () => {
                 className="login-icon"
                 onClick={() => navigate("/profile")}
               >
-                <i class="fa-regular fa-user"></i>
+                <i className="fa-regular fa-user"></i>
               </button>
             ) : (
               <button className="login-icon" onClick={() => navigate("/login")}>
-                <i class="fa-regular fa-user"></i>
+                <i className="fa-regular fa-user"></i>
               </button>
             )}
           </div>
@@ -94,7 +97,7 @@ export const NavBar = () => {
 
         <div className="search-bar" onClick={() => navigate("/products")}>
           <i
-            class="fa-solid fa-magnifying-glass"
+            className="fa-solid fa-magnifying-glass"
             style={{ color: "#98999a" }}
           ></i>
           <input

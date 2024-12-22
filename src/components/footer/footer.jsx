@@ -25,21 +25,21 @@ export const Footer = () => {
           <div className="socials">
             <h3>CONTACTS: </h3>
             <a
-              href="https://github.com/sweta1308"
+              href="#"
               target="_blank"
               rel="noreferrer"
             >
               <i class="fa-brands fa-github fa-lg"></i> Github
             </a>
             <a
-              href="https://twitter.com/AgarwallaSweta"
+              href="#"
               target="_blank"
               rel="noreferrer"
             >
               <i class="fa-brands fa-twitter fa-lg"></i> Twitter
             </a>
             <a
-              href="https://www.linkedin.com/in/sweta-agarwalla-45aa2324a/"
+              href="#"
               target="_blank"
               rel="noreferrer"
             >
@@ -50,7 +50,7 @@ export const Footer = () => {
       </div>
       <hr />
       <p>
-        Copyright <i class="fa-regular fa-copyright"></i>2023 Attire. All rights
+        Copyright <i class="fa-regular fa-copyright"></i>2024 Mytalorzone By Sahiba. All rights
         reserved.
       </p>
     </footer>

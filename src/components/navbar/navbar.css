@@ -163,3 +163,20 @@
     background-color: var(--gray-light);
   }
 }
+.logo-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  height: 50px; /* Adjust size as needed */
+  margin-right: 10px;
+}
+
+.brand-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  white-space: nowrap; /* Prevent wrapping */
+}
